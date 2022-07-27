@@ -75,7 +75,6 @@ steps:
 
     - publish: '$(Build.ArtifactStagingDirectory)'
       artifact: drop
-
 - stage: 'Deploy'
   displayName: 'Deploy the container'
   dependsOn: Build
